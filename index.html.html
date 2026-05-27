@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Union of Soviet Socialist Republics — Official Government Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #CC0000;
+    --dark-red: #8B0000;
+    --gold: #D4AF37;
+    --dark-gold: #B8860B;
+    --cream: #F5F0E8;
+    --dark-cream: #E8E0D0;
+    --paper: #FAF6EE;
+    --ink: #1A1A1A;
+    --muted: #4A4A4A;
+    --light-muted: #888;
+    --border: #C8B89A;
+    --section-bg: #F0EAD6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* TOP HEADER BANNER */
+  .top-banner {
+    background: var(--dark-red);
+    color: var(--gold);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-family: 'Special Elite', monospace;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  /* MAIN HEADER */
+  .main-header {
+    background: linear-gradient(180deg, #8B0000 0%, #CC0000 40%, #8B0000 100%);
+    border-bottom: 4px solid var(--gold);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .main-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0,0,0,0.03) 20px,
+      rgba(0,0,0,0.03) 40px
+    );
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 24px;
+    position: relative;
+  }
+  .header-emblem {
+    flex-shrink: 0;
+  }
+  .emblem-svg { width: 100px; height: 100px; }
+  .header-text { flex: 1; }
+  .header-title-ru {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: rgba(212,175,55,0.7);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .header-title-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+  }
+  .header-title-sub {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+  .header-date {
+    text-align: right;
+    color: rgba(212,175,55,0.8);
+    font-size: 12px;
+    font-family: 'Special Elite', monospace;
+  }
+  .header-date strong { display: block; font-size: 14px; color: var(--gold); }
+
+  /* NAVIGATION */
+  nav.main-nav {
+    background: #1A1A1A;
+    border-bottom: 3px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .nav-inner a {
+    color: #E0D8C8;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Special Elite', monospace;
+    transition: all 0.2s;
+    border-right: 1px solid #333;
+    display: block;
+  }
+  .nav-inner a:first-child { border-left: 1px solid #333; }
+  .nav-inner a:hover, .nav-inner a.active {
+    background: var(--dark-red);
+    color: var(--gold);
+  }
+
+  /* HERO BANNER */
+  .hero {
+    background: #1A1A1A;
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+    position: relative;
+    border-bottom: 4px solid var(--gold);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '★';
+    position: absolute;
+    font-size: 600px;
+    color: rgba(255,255,255,0.02);
+    top: -200px; left: 50%; transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .hero-slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    color: var(--gold);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: #C8B89A;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Special Elite', monospace;
+  }
+  .hero-divider {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 20px auto;
+  }
+
+  /* ALERTS / ANNOUNCEMENTS */
+  .announcements-bar {
+    background: var(--dark-red);
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 13px;
+    border-bottom: 2px solid var(--dark-gold);
+  }
+  .announcements-bar span { color: var(--gold); font-weight: 600; margin-right: 8px; font-family: 'Special Elite', monospace; }
+
+  /* MAIN CONTENT */
+  .main-content { max-width: 1200px; margin: 0 auto; padding: 30px; }
+
+  /* SECTION HEADINGS */
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-red);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-heading::before {
+    content: '★';
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  /* THREE COLUMN GRID */
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 40px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+
+  /* CARDS */
+  .card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--red);
+    padding: 20px;
+  }
+  .card-gold-top { border-top-color: var(--gold); }
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--dark-red);
+    margin-bottom: 10px;
+  }
+  .card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .card .card-meta {
+    font-size: 11px;
+    color: var(--light-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-family: 'Special Elite', monospace;
+  }
+
+  /* MINISTRY TABLE */
+  .gov-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 30px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+  }
+  .gov-table thead tr {
+    background: var(--dark-red);
+    color: var(--gold);
+  }
+  .gov-table thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-family: 'Special Elite', monospace;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .gov-table tbody tr { border-bottom: 1px solid var(--border); }
+  .gov-table tbody tr:nth-child(even) { background: #F0EAD6; }
+  .gov-table tbody tr:hover { background: #E8DFC8; }
+  .gov-table td { padding: 10px 16px; }
+  .gov-table td:first-child { font-weight: 600; color: var(--dark-red); }
+
+  /* PROFILE CARDS */
+  .profile-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid var(--red);
+  }
+  .profile-avatar {
+    width: 70px; height: 70px;
+    background: var(--dark-red);
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold);
+    border: 3px solid var(--gold);
+  }
+  .profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .profile-title {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  .profile-rank {
+    display: inline-block;
+    background: var(--dark-red);
+    color: var(--gold);
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-top: 8px;
+    font-family: 'Special Elite', monospace;
+    letter-spacing: 1px;
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .stat-block {
+    background: var(--cream);
+    padding: 20px 16px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .stat-block:last-child { border-right: none; }
+  .stat-block:nth-child(odd) { background: var(--section-bg); }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--dark-red);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Special Elite', monospace;
+  }
+
+  /* NEWS SECTION */
+  .news-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .news-date-box {
+    background: var(--dark-red);
+    color: var(--gold);
+    text-align: center;
+    padding: 8px 4px;
+    font-family: 'Special Elite', monospace;
+  }
+  .news-date-box .day { font-size: 24px; font-weight: bold; line-height: 1; }
+  .news-date-box .month { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+  .news-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: var(--dark-red);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .news-item p { font-size: 13px; color: var(--muted); }
+
+  /* SIDEBAR */
+  .layout-sidebar { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-bottom: 40px; }
+
+  .sidebar-widget {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--gold);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .sidebar-widget h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: var(--dark-red);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-list { list-style: none; }
+  .sidebar-list li {
+    padding: 6px 0;
+    border-bottom: 1px dotted var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .sidebar-list li::before { content: '✦'; color: var(--red); font-size: 10px; flex-shrink: 0; margin-top: 4px; }
+
+  /* REPUBLICS */
+  .republic-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 40px; }
+  .republic-item {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 14px 10px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .republic-item:hover { border-color: var(--red); background: #f0e8e8; }
+  .republic-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--dark-red);
+    line-height: 1;
+  }
+  .republic-name { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.3; font-weight: 600; }
+
+  /* FIVE YEAR PLAN */
+  .plan-bar-row { margin-bottom: 14px; }
+  .plan-bar-label { font-size: 13px; color: var(--ink); margin-bottom: 4px; font-weight: 600; }
+  .plan-bar-track {
+    background: #DDD5BE;
+    height: 18px;
+    position: relative;
+  }
+  .plan-bar-fill {
+    background: linear-gradient(90deg, var(--dark-red), var(--red));
+    height: 100%;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 6px;
+    font-size: 11px;
+    color: #fff;
+    font-family: 'Special Elite', monospace;
+    min-width: 30px;
+    transition: width 1s ease;
+  }
+
+  /* RED DIVIDERS */
+  .red-divider {
+    height: 3px;
+    background: linear-gradient(90deg, var(--dark-red), var(--gold), var(--dark-red));
+    margin: 40px 0;
+  }
+
+  /* LEADERSHIP BANNER */
+  .leadership-banner {
+    background: var(--dark-red);
+    color: var(--gold);
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-left: 6px solid var(--gold);
+  }
+  .leadership-banner .quote-mark { font-size: 60px; line-height: 0.5; margin-top: 20px; opacity: 0.5; font-family: 'Playfair Display', serif; }
+  .leadership-banner blockquote { font-family: 'Playfair Display', serif; font-size: 15px; font-style: italic; color: #fff; line-height: 1.5; }
+  .leadership-banner cite { font-size: 12px; color: var(--gold); font-style: normal; letter-spacing: 1px; font-family: 'Special Elite', monospace; }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    background: var(--dark-red);
+    color: var(--gold);
+    font-size: 10px;
+    padding: 2px 8px;
+    font-family: 'Special Elite', monospace;
+    letter-spacing: 1px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .badge-gold { background: var(--gold); color: #1A1A1A; }
+
+  /* FOOTER */
+  footer {
+    background: #111;
+    color: #888;
+    border-top: 4px solid var(--red);
+    padding: 40px 30px 20px;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+  .footer-col h5 { color: var(--gold); font-family: 'Special Elite', monospace; letter-spacing: 1px; font-size: 12px; text-transform: uppercase; margin-bottom: 12px; }
+  .footer-col p, .footer-col li { font-size: 12px; line-height: 1.8; color: #666; list-style: none; }
+  .footer-col a { color: #888; text-decoration: none; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: #444;
+    font-family: 'Special Elite', monospace;
+  }
+  .footer-emblem { color: var(--red); font-size: 24px; }
+
+  .ussr-flag-strip {
+    height: 6px;
+    background: linear-gradient(90deg,
+      #CC0000 0%, #CC0000 33%,
+      #D4AF37 33%, #D4AF37 34%,
+      #CC0000 34%, #CC0000 67%,
+      #D4AF37 67%, #D4AF37 68%,
+      #CC0000 68%, #CC0000 100%
+    );
+  }
+
+  /* TABS */
+  .tab-nav { display: flex; border-bottom: 2px solid var(--red); margin-bottom: 20px; }
+  .tab-btn {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Special Elite', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+  }
+  .tab-btn.active { color: var(--dark-red); border-bottom-color: var(--dark-red); background: var(--section-bg); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* MAP SECTION */
+  .map-placeholder {
+    background: #1A2A1A;
+    border: 2px solid var(--dark-gold);
+    height: 280px;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .map-placeholder::before {
+    content: 'СОЮЗ СОВЕТСКИХ СОЦИАЛИСТИЧЕСКИХ РЕСПУБЛИК';
+    font-family: 'Special Elite', monospace;
+    color: rgba(212,175,55,0.15);
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-align: center;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  .map-pin {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .map-pin:hover { transform: scale(1.3); }
+  .map-label {
+    font-family: 'Special Elite', monospace;
+    font-size: 9px;
+    color: var(--gold);
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  /* PRINT NOTICE */
+  .official-notice {
+    background: var(--section-bg);
+    border: 2px solid var(--gold);
+    border-left: 6px solid var(--gold);
+    padding: 14px 20px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+
+  /* RESPONSIVE TWEAKS */
+  @media (max-width: 768px) {
+    .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
+    .republic-grid { grid-template-columns: repeat(3, 1fr); }
+    .stats-row { grid-template-columns: repeat(3, 1fr); }
+    .layout-sidebar { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP STRIP -->
+<div class="ussr-flag-strip"></div>
+
+<!-- OFFICIAL NOTICE BANNER -->
+<div class="top-banner">
+  Официальный правительственный портал · Official Government Portal of the Union of Soviet Socialist Republics · Москва · Moscow
+</div>
+
+<!-- MAIN HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <div class="header-emblem">
+      <!-- USSR Coat of Arms SVG -->
+      <svg class="emblem-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="#8B0000" stroke="#D4AF37" stroke-width="2"/>
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#D4AF37" stroke-width="0.5"/>
+        <!-- Globe/earth -->
+        <ellipse cx="50" cy="52" rx="22" ry="22" fill="#1A4A1A" stroke="#D4AF37" stroke-width="1"/>
+        <ellipse cx="50" cy="52" rx="22" ry="8" fill="none" stroke="#D4AF37" stroke-width="0.7"/>
+        <line x1="28" y1="52" x2="72" y2="52" stroke="#D4AF37" stroke-width="0.7"/>
+        <line x1="50" y1="30" x2="50" y2="74" stroke="#D4AF37" stroke-width="0.7"/>
+        <!-- Hammer -->
+        <rect x="42" y="46" width="14" height="4" rx="1" fill="#D4AF37" transform="rotate(-30 50 48)"/>
+        <rect x="48" y="38" width="5" height="14" rx="1" fill="#D4AF37" transform="rotate(-30 50 48)"/>
+        <!-- Sickle arc -->
+        <path d="M 52 60 Q 62 50 56 42" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Sun rays at top -->
+        <line x1="50" y1="7" x2="50" y2="14" stroke="#D4AF37" stroke-width="1.5"/>
+        <line x1="58" y1="9" x2="55" y2="15" stroke="#D4AF37" stroke-width="1"/>
+        <line x1="42" y1="9" x2="45" y2="15" stroke="#D4AF37" stroke-width="1"/>
+        <!-- Star -->
+        <polygon points="50,4 52,10 58,10 53,14 55,20 50,16 45,20 47,14 42,10 48,10" fill="#D4AF37"/>
+        <!-- Wheat stalks left -->
+        <path d="M20,72 Q14,50 22,30" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+        <path d="M22,30 Q18,24 20,20 Q22,24 24,22 Q23,26 22,30" fill="#D4AF37"/>
+        <path d="M20,38 Q16,35 17,31 Q19,33 22,34" fill="#D4AF37"/>
+        <path d="M20,46 Q15,43 16,39 Q18,41 21,42" fill="#D4AF37"/>
+        <!-- Wheat stalks right -->
+        <path d="M80,72 Q86,50 78,30" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+        <path d="M78,30 Q82,24 80,20 Q78,24 76,22 Q77,26 78,30" fill="#D4AF37"/>
+        <path d="M80,38 Q84,35 83,31 Q81,33 78,34" fill="#D4AF37"/>
+        <path d="M80,46 Q85,43 84,39 Q82,41 79,42" fill="#D4AF37"/>
+        <!-- Bottom ribbon -->
+        <path d="M20,72 Q35,82 50,80 Q65,82 80,72" fill="none" stroke="#D4AF37" stroke-width="2"/>
+        <text x="50" y="92" text-anchor="middle" fill="#D4AF37" font-size="5" font-family="serif">СССР · CCCP</text>
+      </svg>
+    </div>
+    <div class="header-text">
+      <span class="header-title-ru">Союз Советских Социалистических Республик</span>
+      <div class="header-title-main">Union of Soviet Socialist Republics</div>
+      <div class="header-title-sub">Official Government Portal — Central Government Administration</div>
+    </div>
+    <div class="header-date">
+      <strong>Moscow, USSR</strong>
+      Established: December 30, 1922<br>
+      Capital: Moscow<br>
+      Portal Version: 1.0 (Seventh Five-Year Plan)
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a href="#overview" class="active">Home</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#ministries">Ministries</a>
+    <a href="#cc">Central Committee</a>
+    <a href="#republics">Republics</a>
+    <a href="#fiveplan">Five-Year Plan</a>
+    <a href="#military">Military</a>
+    <a href="#departments">Departments</a>
+    <a href="#workers">Workers</a>
+    <a href="#news">Pravda News</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slogan">Пролетарии всех стран, соединяйтесь!</div>
+  <div class="hero-divider"></div>
+  <div class="hero-sub">Workers of All Countries, Unite! · The World's First Socialist State</div>
+</section>
+
+<!-- ANNOUNCEMENTS -->
+<div class="announcements-bar">
+  <span>📢 ANNOUNCEMENT:</span> The 7th Five-Year Plan (1961–1965) has achieved 112% of its industrial targets. All workers and collectives are commended for their heroic efforts in service to the Motherland.
+</div>
+
+<main class="main-content">
+
+  <!-- OVERVIEW SECTION -->
+  <section id="overview">
+    <div class="official-notice">
+      <strong>Official Notice:</strong> This portal is the official digital representation of the Government of the Union of Soviet Socialist Republics. All information published herein is approved by the Presidium of the Supreme Soviet and the Council of Ministers of the USSR.
+    </div>
+
+    <!-- STATISTICS -->
+    <div class="stats-row">
+      <div class="stat-block">
+        <div class="stat-number">15</div>
+        <div class="stat-label">Union Republics</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">286M</div>
+        <div class="stat-label">Population (1982)</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">22.4M</div>
+        <div class="stat-label">km² Territory</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">38</div>
+        <div class="stat-label">Central Ministries</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">1922</div>
+        <div class="stat-label">Year Founded</div>
+      </div>
+    </div>
+
+    <!-- QUOTE BANNER -->
+    <div class="leadership-banner">
+      <div class="quote-mark">"</div>
+      <div>
+        <blockquote>The Soviet Union is not only a geographic and national concept, but a concept of a new historical era in the development of human civilization — a path toward the bright future of all mankind.</blockquote>
+        <cite>— Nikita Sergeyevich Khrushchev, General Secretary of the Communist Party (1953–1964)</cite>
+      </div>
+    </div>
+
+    <!-- ABOUT CARDS -->
+    <h2 class="section-heading">About the USSR Government</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-meta">Constitutional Foundation</div>
+        <h3>The Soviet Constitution</h3>
+        <p>The USSR operates under the Stalin Constitution of 1936, superseded by the Constitution of 1977 (Brezhnev Constitution), establishing a socialist state governed by the people through soviets at all levels. The Communist Party of the Soviet Union (CPSU) is the leading and guiding force of Soviet society.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Supreme Legislative Body</div>
+        <h3>Supreme Soviet of the USSR</h3>
+        <p>The highest organ of state power, consisting of two equal chambers: the Soviet of the Union (representing equal populations) and the Soviet of Nationalities (representing all national and territorial units). Convenes twice yearly; elects the Presidium to act between sessions.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Executive Administration</div>
+        <h3>Council of Ministers</h3>
+        <p>The highest executive and administrative organ of state power, formed by the Supreme Soviet. Headed by the Chairman (Premier), the Council directs the economy, implements legislation, oversees ministries, and coordinates the work of all state bodies across the Union.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- LEADERSHIP SECTION -->
+  <section id="leadership">
+    <h2 class="section-heading">Supreme Leadership of the USSR</h2>
+
+    <!-- GENERAL SECRETARIES -->
+    <h3 style="font-family:'Playfair Display',serif; font-size:18px; color:var(--dark-red); margin-bottom:16px;">General Secretaries of the Communist Party of the Soviet Union</h3>
+    <table class="gov-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Period in Office</th>
+          <th>Notable Policies</th>
+          <th>Era</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vladimir Ilyich Lenin</td>
+          <td>1917–1924 (Chairman of Sovnarkom)</td>
+          <td>New Economic Policy, Founding of USSR, War Communism</td>
+          <td><span class="badge">Revolutionary</span></td>
+        </tr>
+        <tr>
+          <td>Joseph Vissarionovich Stalin</td>
+          <td>1922–1953</td>
+          <td>Five-Year Plans, Collectivization, Victory in WWII, Industrialization</td>
+          <td><span class="badge">Stalinist</span></td>
+        </tr>
+        <tr>
+          <td>Nikita Sergeyevich Khrushchev</td>
+          <td>1953–1964</td>
+          <td>De-Stalinization, Space Program, Thaw, Virgin Lands Campaign</td>
+          <td><span class="badge">Thaw</span></td>
+        </tr>
+        <tr>
+          <td>Leonid Ilyich Brezhnev</td>
+          <td>1964–1982</td>
+          <td>Détente, Brezhnev Doctrine, 1977 Constitution, Arms Buildup</td>
+          <td><span class="badge badge-gold">Stagnation</span></td>
+        </tr>
+        <tr>
+          <td>Yuri Vladimirovich Andropov</td>
+          <td>1982–1984</td>
+          <td>Anti-Corruption Campaign, Early Reform Initiatives</td>
+          <td><span class="badge">Transitional</span></td>
+        </tr>
+        <tr>
+          <td>Konstantin Ustinovich Chernenko</td>
+          <td>1984–1985</td>
+          <td>Conservative Policies, Cold War Tensions</td>
+          <td><span class="badge">Transitional</span></td>
+        </tr>
+        <tr>
+          <td>Mikhail Sergeyevich Gorbachev</td>
+          <td>1985–1991</td>
+          <td>Glasnost, Perestroika, START Treaty, Democratic Reforms</td>
+          <td><span class="badge">Reform</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- TOP LEADERSHIP CARDS -->
+    <h3 style="font-family:'Playfair Display',serif; font-size:18px; color:var(--dark-red); margin-bottom:16px; margin-top:30px;">Current Senior Leadership</h3>
+    <div class="grid-4">
+      <div class="profile-card">
+        <div class="profile-avatar">ГС</div>
+        <div class="profile-name">General Secretary, CPSU</div>
+        <div class="profile-title">First among equals in the Politburo, Chief executive of the Party and State</div>
+        <div class="profile-rank">Party Leadership</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">ПС</div>
+        <div class="profile-name">Chairman of the Presidium</div>
+        <div class="profile-title">Head of State, President of the USSR, nominal head of government</div>
+        <div class="profile-rank">Head of State</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">СМ</div>
+        <div class="profile-name">Chairman, Council of Ministers</div>
+        <div class="profile-title">Premier of the USSR, Head of Government, directs state administration</div>
+        <div class="profile-rank">Head of Government</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">МО</div>
+        <div class="profile-name">Minister of Defence</div>
+        <div class="profile-title">Supreme Commander of Armed Forces, member of Defence Council</div>
+        <div class="profile-rank">Military Affairs</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- MINISTRIES SECTION -->
+  <section id="ministries">
+    <h2 class="section-heading">Council of Ministers — All-Union Ministries</h2>
+
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('min-economy')">Economy & Industry</button>
+      <button class="tab-btn" onclick="showTab('min-social')">Social & Culture</button>
+      <button class="tab-btn" onclick="showTab('min-security')">Security & Foreign</button>
+    </div>
+
+    <div id="min-economy" class="tab-content active">
+      <table class="gov-table">
+        <thead>
+          <tr><th>Ministry</th><th>Responsibilities</th><th>Subordinate Bodies</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ministry of Finance</td><td>State budget, taxation, currency, credit policy, financial planning</td><td>Gosbank, Savings Banks, Customs</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Heavy Industry</td><td>Metallurgy, machine building, chemical and mining industries</td><td>100+ Industrial Enterprises</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Light Industry</td><td>Consumer goods, textiles, clothing, leather, footwear production</td><td>Regional Industrial Combines</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Agriculture</td><td>Collective farms, state farms, grain production, livestock, irrigation</td><td>MTS Stations, Kolkhozy, Sovkhozy</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Trade</td><td>Domestic trade, distribution, consumer cooperatives, prices</td><td>Gosplan allocation, Stores</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Transport</td><td>Railways, roads, inland waterways, civil aviation coordination</td><td>Soviet Railways (SZhD), Aeroflot</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Communications</td><td>Postal services, telegraph, telephone, radio, broadcasting</td><td>Post Offices, Radio Broadcasting</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Energy</td><td>Electric power stations, nuclear energy, oil & gas extraction</td><td>Energostroy, Regional Power Grids</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Construction</td><td>Capital construction, housing, industrial building projects</td><td>Construction Trusts, Design Bureaus</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Gosplan (State Planning Committee)</td><td>National economic planning, Five-Year Plans, resource allocation</td><td>All Ministries (oversight)</td><td><span class="badge badge-gold">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="min-social" class="tab-content">
+      <table class="gov-table">
+        <thead>
+          <tr><th>Ministry</th><th>Responsibilities</th><th>Subordinate Bodies</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ministry of Education</td><td>General and higher education, polytechnical training, curriculum</td><td>Universities, Schools, Vocational Institutes</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Public Health</td><td>Hospitals, clinics, public health campaigns, pharmaceuticals</td><td>Regional Hospitals, Sanatoriums</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Culture</td><td>Theatre, cinema, fine arts, museums, libraries, archives</td><td>Bolshoi, Hermitage, Lenfilm, Mosfilm</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Social Security</td><td>Pensions, disability benefits, social welfare programs</td><td>Regional Social Security Offices</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Higher Education</td><td>Universities, scientific research institutes, postgraduate programs</td><td>Moscow State University and 800+ HEIs</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Justice</td><td>Courts, legal codification, notarial services, corrections</td><td>Supreme Court, Regional Courts</td><td><span class="badge badge-gold">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="min-security" class="tab-content">
+      <table class="gov-table">
+        <thead>
+          <tr><th>Ministry / Committee</th><th>Responsibilities</th><th>Divisions</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ministry of Foreign Affairs (MID)</td><td>Diplomacy, foreign policy, consular services, international treaties</td><td>190+ Embassies Worldwide</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Defence</td><td>Armed forces command, military strategy, conscription, defence industry</td><td>Army, Navy, Air Force, Strategic Missiles</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>KGB (Committee for State Security)</td><td>Intelligence, counterintelligence, border security, internal security</td><td>16 Directorates, Border Troops</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Internal Affairs (MVD)</td><td>Militia (police), prisons, fire services, internal troops, passports</td><td>Regional Militia, Gulag Administration</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>GRU (Military Intelligence)</td><td>Foreign military intelligence, spetsnaz special forces</td><td>12 Directorates</td><td><span class="badge badge-gold">Active</span></td></tr>
+          <tr><td>Ministry of Foreign Trade</td><td>Export-import operations, trade agreements, currency earning</td><td>Amtorg, Eksportlyon, Trade Delegations</td><td><span class="badge badge-gold">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- CENTRAL COMMITTEE SECTION -->
+  <section id="cc">
+    <h2 class="section-heading">Central Committee of the CPSU</h2>
+
+    <div class="layout-sidebar">
+      <div>
+        <p style="margin-bottom:20px; color:var(--muted); font-size:14px;">The Central Committee of the Communist Party of the Soviet Union is elected by the Party Congress and serves as the highest party authority between congresses. It elects the Politburo, the Secretariat, and the General Secretary.</p>
+
+        <h3 style="font-family:'Playfair Display',serif; font-size:17px; color:var(--dark-red); margin-bottom:14px;">Politburo — Full Members</h3>
+        <table class="gov-table">
+          <thead>
+            <tr><th>Name</th><th>Position(s)</th><th>Member Since</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Leonid I. Brezhnev</td><td>General Secretary, Chairman of Presidium</td><td>1952</td></tr>
+            <tr><td>Alexei N. Kosygin</td><td>Chairman, Council of Ministers (Premier)</td><td>1960</td></tr>
+            <tr><td>Nikolai V. Podgorny</td><td>Chairman, Presidium of Supreme Soviet</td><td>1960</td></tr>
+            <tr><td>Mikhail A. Suslov</td><td>Second Secretary, Chief Ideologist</td><td>1952</td></tr>
+            <tr><td>Andrei A. Gromyko</td><td>Minister of Foreign Affairs</td><td>1973</td></tr>
+            <tr><td>Dmitri F. Ustinov</td><td>Minister of Defence</td><td>1965</td></tr>
+            <tr><td>Yuri V. Andropov</td><td>Chairman, KGB</td><td>1973</td></tr>
+            <tr><td>Viktor V. Grishin</td><td>First Secretary, Moscow City Committee</td><td>1971</td></tr>
+            <tr><td>Konstantin U. Chernenko</td><td>Secretary of the Central Committee</td><td>1978</td></tr>
+            <tr><td>Nikolai A. Tikhonov</td><td>First Deputy Chairman, Council of Ministers</td><td>1979</td></tr>
+            <tr><td>Vladimir V. Shcherbitsky</td><td>First Secretary, Ukrainian CP</td><td>1971</td></tr>
+            <tr><td>Geidar A. Aliyev</td><td>First Deputy Premier</td><td>1982</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="font-family:'Playfair Display',serif; font-size:17px; color:var(--dark-red); margin-bottom:14px; margin-top:24px;">Secretariat of the Central Committee</h3>
+        <table class="gov-table">
+          <thead>
+            <tr><th>Secretary</th><th>Area of Responsibility</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Mikhail A. Suslov</td><td>Ideology, International Communist Movement</td></tr>
+            <tr><td>Konstantin U. Chernenko</td><td>General Administration, Cadres</td></tr>
+            <tr><td>Mikhail S. Gorbachev</td><td>Agriculture and Food Production</td></tr>
+            <tr><td>Grigory V. Romanov</td><td>Defence Industry, Heavy Industry</td></tr>
+            <tr><td>Boris N. Ponomarev</td><td>Foreign Communist and Workers' Parties</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <div class="sidebar-widget">
+          <h4>CC Departments</h4>
+          <ul class="sidebar-list">
+            <li>Department of Propaganda and Agitation</li>
+            <li>Department of Organization and Party Work</li>
+            <li>Department of International Relations</li>
+            <li>Department of Science and Educational Institutions</li>
+            <li>Department of Culture</li>
+            <li>Department of Administrative Organs (Security)</li>
+            <li>Department of Heavy Industry</li>
+            <li>Department of Light Industry</li>
+            <li>Department of Agriculture</li>
+            <li>Department of Trade and Finance</li>
+            <li>Department of Transport & Communications</li>
+            <li>Department of Construction</li>
+            <li>General Department (Secretariat)</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Party Congresses</h4>
+          <ul class="sidebar-list">
+            <li>1st Congress — 1898, Minsk</li>
+            <li>10th Congress — 1921 (NEP adopted)</li>
+            <li>17th Congress — 1934 (Congress of Victors)</li>
+            <li>20th Congress — 1956 (De-Stalinization)</li>
+            <li>22nd Congress — 1961 (New Party Program)</li>
+            <li>24th Congress — 1971 (Brezhnev's Peace Program)</li>
+            <li>26th Congress — 1981 (Comprehensive Program)</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Central Control Commission</h4>
+          <ul class="sidebar-list">
+            <li>Party Discipline Oversight</li>
+            <li>Anti-Corruption Investigations</li>
+            <li>Membership Verification</li>
+            <li>Ethics and Conduct Review</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- UNION REPUBLICS -->
+  <section id="republics">
+    <h2 class="section-heading">The 15 Union Soviet Socialist Republics</h2>
+    <p style="margin-bottom:20px; color:var(--muted); font-size:14px;">Each Union Republic maintains its own Constitution, Supreme Soviet, and Council of Ministers, while operating under the Union Constitution and unified Communist Party leadership.</p>
+
+    <div class="republic-grid">
+      <div class="republic-item">
+        <div class="republic-num">01</div>
+        <div class="republic-name">Russian SFSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">02</div>
+        <div class="republic-name">Ukrainian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">03</div>
+        <div class="republic-name">Byelorussian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">04</div>
+        <div class="republic-name">Uzbek SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">05</div>
+        <div class="republic-name">Kazakh SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">06</div>
+        <div class="republic-name">Georgian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">07</div>
+        <div class="republic-name">Azerbaijani SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">08</div>
+        <div class="republic-name">Lithuanian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">09</div>
+        <div class="republic-name">Moldavian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">10</div>
+        <div class="republic-name">Latvian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">11</div>
+        <div class="republic-name">Kirghiz SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">12</div>
+        <div class="republic-name">Tajik SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">13</div>
+        <div class="republic-name">Armenian SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">14</div>
+        <div class="republic-name">Turkmen SSR</div>
+      </div>
+      <div class="republic-item">
+        <div class="republic-num">15</div>
+        <div class="republic-name">Estonian SSR</div>
+      </div>
+    </div>
+
+    <!-- Republic Details Table -->
+    <table class="gov-table">
+      <thead>
+        <tr><th>Republic</th><th>Capital</th><th>Population (est.)</th><th>Area km²</th><th>First Secretary</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Russian SFSR</td><td>Moscow</td><td>138 million</td><td>17,075,400</td><td>Boris Yeltsin (1985)</td></tr>
+        <tr><td>Ukrainian SSR</td><td>Kyiv</td><td>51 million</td><td>603,550</td><td>Vladimir Shcherbitsky</td></tr>
+        <tr><td>Byelorussian SSR</td><td>Minsk</td><td>10 million</td><td>207,600</td><td>Nikolai Slyunkov</td></tr>
+        <tr><td>Uzbek SSR</td><td>Tashkent</td><td>19 million</td><td>447,400</td><td>Inamzhon Usmankhodzhaev</td></tr>
+        <tr><td>Kazakh SSR</td><td>Alma-Ata</td><td>16 million</td><td>2,724,900</td><td>Dinmukhamed Kunayev</td></tr>
+        <tr><td>Georgian SSR</td><td>Tbilisi</td><td>5.4 million</td><td>69,700</td><td>Eduard Shevardnadze</td></tr>
+        <tr><td>Azerbaijani SSR</td><td>Baku</td><td>7 million</td><td>86,600</td><td>Kamran Bagirov</td></tr>
+        <tr><td>Lithuanian SSR</td><td>Vilnius</td><td>3.6 million</td><td>65,300</td><td>Petras Griškevičius</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- FIVE YEAR PLAN -->
+  <section id="fiveplan">
+    <h2 class="section-heading">Eleventh Five-Year Plan (1981–1985)</h2>
+    <div class="layout-sidebar">
+      <div>
+        <p style="margin-bottom:20px; color:var(--muted); font-size:14px;">The Five-Year Plan (Пятилетний план, Pyatiletka) is the central instrument of socialist economic management in the USSR. Prepared by Gosplan, approved by the Supreme Soviet, and implemented through all ministries and enterprises of the national economy.</p>
+
+        <h3 style="font-family:'Playfair Display',serif; font-size:16px; color:var(--dark-red); margin-bottom:16px;">Key Sector Targets vs. Achievement</h3>
+
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Steel Production (155 million tonnes target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:94%">94%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Coal Mining (775 million tonnes target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:88%">88%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Oil Production (630 million tonnes target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:97%">97%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Electric Power (1,550 billion kWh target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:91%">91%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Grain Harvest (238.3 million tonnes target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:72%">72%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Housing Construction (530 million m² target)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:85%">85%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Consumer Goods (108% of 10th Plan baseline)</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:78%">78%</div></div>
+        </div>
+        <div class="plan-bar-row">
+          <div class="plan-bar-label">Scientific Research Institutes</div>
+          <div class="plan-bar-track"><div class="plan-bar-fill" style="width:102%; background:linear-gradient(90deg,#006600,#009900)">102% ✓</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sidebar-widget">
+          <h4>Historical Five-Year Plans</h4>
+          <ul class="sidebar-list">
+            <li>1st Plan (1928–32): Industrialization Foundation</li>
+            <li>2nd Plan (1933–37): Consolidation of Industry</li>
+            <li>3rd Plan (1938–42): Defence Buildup (interrupted)</li>
+            <li>4th Plan (1946–50): Post-War Reconstruction</li>
+            <li>5th Plan (1951–55): Further Industrialization</li>
+            <li>6th Plan (1956–60): Consumer Focus (abandoned)</li>
+            <li>7th Plan (1961–65): Seven-Year Plan</li>
+            <li>8th Plan (1966–70): Golden Pyatiletka</li>
+            <li>9th Plan (1971–75): Consumer Goods Emphasis</li>
+            <li>10th Plan (1976–80): Efficiency Drive</li>
+            <li>11th Plan (1981–85): Modernization Focus</li>
+            <li>12th Plan (1986–90): Perestroika Plan</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Gosplan Structure</h4>
+          <ul class="sidebar-list">
+            <li>Chairman of Gosplan (Nikolai Baibakov)</li>
+            <li>General Planning Directorate</li>
+            <li>Sectoral Planning Directorates (38)</li>
+            <li>Regional Planning Offices (15 Republics)</li>
+            <li>Material-Technical Supply Dept.</li>
+            <li>Balance of National Economy Dept.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- MILITARY -->
+  <section id="military">
+    <h2 class="section-heading">Soviet Armed Forces</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-meta">Ground Forces</div>
+        <h3>Soviet Army (Советская Армия)</h3>
+        <p>Largest component of the armed forces with approximately 1.8 million active personnel organized into military districts. Commands include Western TVD, Southwestern TVD, and Far Eastern TVD. Equipped with T-72/T-80 main battle tanks, BMP infantry vehicles, and extensive artillery.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Strategic Forces</div>
+        <h3>Strategic Rocket Forces</h3>
+        <p>Independent service branch controlling all land-based intercontinental and intermediate-range ballistic missiles. Maintains approximately 1,400 ICBMs including SS-18 Satan, SS-19 Stiletto, and SS-25 Sickle. Commanded by Chief Marshal of Artillery.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Air Power</div>
+        <h3>Soviet Air Forces (VVS)</h3>
+        <p>Operates over 9,000 combat aircraft including MiG-23, MiG-29, Su-27, and Tu-95 Bear strategic bomber. The Air Defence Forces (PVO) maintain separate interceptor regiments and surface-to-air missile batteries throughout USSR territory.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Naval Power</div>
+        <h3>Soviet Navy (VMF)</h3>
+        <p>Four fleets: Northern, Pacific, Baltic, and Black Sea. Submarine force numbers over 300 boats including Typhoon-class SSBNs carrying SS-N-20 SLBMs. Surface fleet includes Kiev-class aircraft carriers, Kirov-class battlecruisers, and Slava-class cruisers.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Space & Technology</div>
+        <h3>Space Programme (Roscosmos/VKS)</h3>
+        <p>Leading the world in space exploration. Launched first satellite Sputnik (1957), first human in space Yuri Gagarin (1961), first space station Salyut. Operates Baikonur Cosmodrome in Kazakhstan. Current missions include Mir space station program.</p>
+      </div>
+      <div class="card">
+        <div class="card-meta">Internal Troops</div>
+        <h3>KGB Border Guards</h3>
+        <p>Approximately 220,000-strong border protection force guarding 62,000 km of Soviet borders. Equipped with patrol vessels, helicopters, and guard dogs. Operates under KGB command with border crossings, customs, and maritime patrol responsibilities.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif; font-size:17px; color:var(--dark-red); margin-bottom:16px;">Senior Military Leadership</h3>
+    <table class="gov-table">
+      <thead>
+        <tr><th>Name</th><th>Rank</th><th>Position</th><th>Branch</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Dmitri Ustinov</td><td>Marshal of the Soviet Union</td><td>Minister of Defence</td><td>Supreme Command</td></tr>
+        <tr><td>Nikolai Ogarkov</td><td>Marshal of the Soviet Union</td><td>Chief of General Staff (1977–84)</td><td>General Staff</td></tr>
+        <tr><td>Sergei Akhromeyev</td><td>Marshal of the Soviet Union</td><td>Chief of General Staff (1984–88)</td><td>General Staff</td></tr>
+        <tr><td>Viktor Kulikov</td><td>Marshal of the Soviet Union</td><td>Commander-in-Chief, Warsaw Pact Forces</td><td>Warsaw Pact</td></tr>
+        <tr><td>Nikolai Baibakov</td><td>Army General</td><td>Commander, Soviet Army</td><td>Ground Forces</td></tr>
+        <tr><td>Vladimir Chernavin</td><td>Admiral of the Fleet</td><td>Commander-in-Chief, Soviet Navy</td><td>Navy</td></tr>
+        <tr><td>Alexander Koldunov</td><td>Chief Marshal of Aviation</td><td>Commander-in-Chief, Air Defence Forces</td><td>Air Defence</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- DEPARTMENTS -->
+  <section id="departments">
+    <h2 class="section-heading">State Committees & Departments</h2>
+    <div class="grid-3">
+      <div class="card card-gold-top">
+        <div class="card-meta">Planning & Economy</div>
+        <h3>Gosplan — State Planning Committee</h3>
+        <p>The supreme economic planning body of the USSR. Prepares Five-Year and annual plans for all sectors. Sets output targets, resource allocation quotas, and investment priorities. Chairman: Nikolai Baibakov (1965–1985).</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-meta">Science & Technology</div>
+        <h3>Academy of Sciences (AN SSSR)</h3>
+        <p>The highest scientific institution of the USSR with over 300 research institutes and 60,000 scientists. Oversees all fundamental research. Divisions include: Physics, Chemistry, Mathematics, Biology, Earth Sciences, Social Sciences. President: Anatoly Alexandrov.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-meta">Atomic Energy</div>
+        <h3>Minsredmash (Ministry of Medium Machine Building)</h3>
+        <p>Covers the entire Soviet nuclear weapons and nuclear energy complex. Oversees design bureaus, uranium enrichment, weapons assembly, and the civilian nuclear power program including the RBMK and VVER reactor types.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-meta">Statistics</div>
+        <h3>TsSU — Central Statistical Administration</h3>
+        <p>Collects and publishes all official national statistics. Produces the annual "National Economy of the USSR" yearbook. Tracks industrial output, population, trade, agriculture, and social indicators. Reports directly to Council of Ministers.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-meta">Supply</div>
+        <h3>Gossnab — Material-Technical Supply</h3>
+        <p>Responsible for distribution and allocation of all producer goods (machinery, materials, equipment) throughout the Soviet economy. Manages over 2,000 commodity groups across all enterprises and coordinates inter-enterprise supply contracts.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-meta">Prices</div>
+        <h3>Goskomtsen — State Committee on Prices</h3>
+        <p>Sets and regulates all official prices in the Soviet economy for both producer and consumer goods. Maintains price stability as mandated by the Plan. Manages a unified price list of over 20 million commodity prices and tariffs.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- WORKERS INFORMATION -->
+  <section id="workers">
+    <h2 class="section-heading">Workers, Labour & Trade Unions</h2>
+
+    <div class="layout-sidebar">
+      <div>
+        <div class="leadership-banner" style="margin-bottom:20px;">
+          <div class="quote-mark">"</div>
+          <div>
+            <blockquote>In the USSR, work is a matter of honour, glory, valour, and heroism. Every worker is a builder of communism and a participant in the great cause of socialist construction.</blockquote>
+            <cite>— Article 14, Constitution of the USSR (1977)</cite>
+          </div>
+        </div>
+
+        <h3 style="font-family:'Playfair Display',serif; font-size:17px; color:var(--dark-red); margin-bottom:14px;">Soviet Trade Union Structure (VTsSPS)</h3>
+        <table class="gov-table">
+          <thead>
+            <tr><th>Trade Union</th><th>Sector</th><th>Membership</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>All-Union Central Council of Trade Unions</td><td>Supreme body, coordinates all unions</td><td>130+ million</td></tr>
+            <tr><td>Union of Mineworkers</td><td>Coal, ore, mining</td><td>4.2 million</td></tr>
+            <tr><td>Union of Machine Builders</td><td>Engineering, machine building</td><td>8.6 million</td></tr>
+            <tr><td>Union of Agricultural Workers</td><td>Collective & state farms</td><td>11.2 million</td></tr>
+            <tr><td>Union of Teachers</td><td>Education at all levels</td><td>5.8 million</td></tr>
+            <tr><td>Union of Medical Workers</td><td>Health care, pharmaceuticals</td><td>3.4 million</td></tr>
+            <tr><td>Union of Transport Workers</td><td>Railways, aviation, shipping</td><td>6.1 million</td></tr>
+            <tr><td>Union of Construction Workers</td><td>Building, civil engineering</td><td>7.2 million</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="font-family:'Playfair Display',serif; font-size:17px; color:var(--dark-red); margin-bottom:14px; margin-top:24px;">Hero of Socialist Labour</h3>
+        <p style="font-size:14px; color:var(--muted); margin-bottom:12px;">The highest honour awarded for outstanding contributions to socialist labour and the national economy. Instituted December 27, 1938. Recipients receive the Gold Hammer and Sickle medal.</p>
+        <table class="gov-table">
+          <thead><tr><th>Recipient</th><th>Sector</th><th>Year</th><th>Achievement</th></tr></thead>
+          <tbody>
+            <tr><td>Alexei Stakhanov</td><td>Mining</td><td>1938</td><td>Exceeded coal quota 14× (Stakhanovite movement)</td></tr>
+            <tr><td>Pavel Angelina</td><td>Agriculture</td><td>1940</td><td>First female tractor brigade leader in USSR</td></tr>
+            <tr><td>Yuri Gagarin</td><td>Space Program</td><td>1961</td><td>First human in space — Vostok 1</td></tr>
+            <tr><td>Valentina Tereshkova</td><td>Space Program</td><td>1963</td><td>First woman in space — Vostok 6</td></tr>
+            <tr><td>Sergei Korolyov</td><td>Science</td><td>1956</td><td>Chief Designer of Soviet space program</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <div class="sidebar-widget">
+          <h4>Workers' Rights & Benefits</h4>
+          <ul class="sidebar-list">
+            <li>Guaranteed right to work (Article 40 Constitution)</li>
+            <li>Right to rest — 41-hour work week maximum</li>
+            <li>Annual paid vacation (15–24 working days)</li>
+            <li>Free universal healthcare</li>
+            <li>Free education at all levels</li>
+            <li>Subsidized housing allocation</li>
+            <li>State pension upon retirement</li>
+            <li>Maternity leave (fully paid 112 days)</li>
+            <li>Disability and sickness benefits</li>
+            <li>Trade union representation in enterprise management</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Stakhanovite Movement</h4>
+          <ul class="sidebar-list">
+            <li>Worker productivity competition program</li>
+            <li>Named after miner Alexei Stakhanov (1935)</li>
+            <li>Best workers earn "Stakhanovite" title</li>
+            <li>Privileges: better housing, bonuses, honours</li>
+            <li>Annual National Productivity Competitions</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Youth Organizations</h4>
+          <ul class="sidebar-list">
+            <li>Little Octobrists (ages 7–9)</li>
+            <li>Young Pioneers (ages 9–14)</li>
+            <li>Komsomol (ages 14–28)</li>
+            <li>CPSU Candidate Membership (18+)</li>
+            <li>Full CPSU Membership (21+)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <!-- NEWS SECTION -->
+  <section id="news">
+    <h2 class="section-heading">Pravda — Official News Bulletin</h2>
+    <div class="layout-sidebar">
+      <div>
+        <div class="news-item">
+          <div class="news-date-box"><div class="day">15</div><div class="month">Nov</div></div>
+          <div>
+            <h4>Comrade General Secretary Addresses the 26th Party Congress on Socialist Construction</h4>
+            <p>The General Secretary delivered a comprehensive report on the achievements of the socialist state and outlined the objectives of the Twelfth Five-Year Plan, emphasizing acceleration of scientific-technological progress.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-box"><div class="day">12</div><div class="month">Nov</div></div>
+          <div>
+            <h4>Soviet Scientists Achieve Breakthrough in Thermonuclear Fusion Research at Kurchatov Institute</h4>
+            <p>Researchers at the I.V. Kurchatov Institute of Atomic Energy have reported significant advances in controlled thermonuclear fusion, bringing peaceful atomic energy closer to practical application.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-box"><div class="day">08</div><div class="month">Nov</div></div>
+          <div>
+            <h4>October Revolution Anniversary Celebrations Held Across All 15 Union Republics</h4>
+            <p>Grand celebrations marking the 68th anniversary of the Great October Socialist Revolution were held in Moscow and all union republic capitals. Military parades, workers' demonstrations, and cultural performances honoured the achievements of socialism.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-box"><div class="day">03</div><div class="month">Nov</div></div>
+          <div>
+            <h4>New BAM Railway Fully Operational — Connecting Siberia to Soviet Far East</h4>
+            <p>The Baikal-Amur Mainline (BAM), a major achievement of socialist construction spanning 4,324 km, has been declared fully operational, opening new territories to industrial development and settlement.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-box"><div class="day">28</div><div class="month">Oct</div></div>
+          <div>
+            <h4>Supreme Soviet Ratifies New Treaties of Friendship with Progressive Nations</h4>
+            <p>The Presidium of the Supreme Soviet has ratified treaties of friendship, cooperation, and mutual assistance with several fraternal socialist nations, strengthening the bonds of proletarian internationalism.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sidebar-widget">
+          <h4>Official Publications</h4>
+          <ul class="sidebar-list">
+            <li>Pravda — Central Committee Organ</li>
+            <li>Izvestia — Government Newspaper</li>
+            <li>Trud — Trade Union Daily</li>
+            <li>Krasnaya Zvezda — Military Paper</li>
+            <li>Komsomolskaya Pravda — Youth Paper</li>
+            <li>Ekonomicheskaya Gazeta — Economics Weekly</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Official Radio & Television</h4>
+          <ul class="sidebar-list">
+            <li>Gosteleradio (State Broadcasting Committee)</li>
+            <li>Pervaya Programma (1st Programme TV)</li>
+            <li>Radio Moscow (World Service)</li>
+            <li>Radio Mayak — All-Union Radio</li>
+            <li>TASS — Official News Agency</li>
+            <li>Novosti Press Agency (APN)</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Foreign Policy Pillars</h4>
+          <ul class="sidebar-list">
+            <li>Peaceful coexistence with capitalist states</li>
+            <li>Support for national liberation movements</li>
+            <li>Proletarian internationalism</li>
+            <li>Warsaw Pact collective security</li>
+            <li>COMECON economic integration</li>
+            <li>Nuclear arms control and disarmament</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Union of Soviet Socialist Republics</h5>
+        <p>Official Government Portal of the USSR. This portal represents the supreme organs of state power and administration of the Union of Soviet Socialist Republics. All content is approved by the Council of Ministers and the Presidium of the Supreme Soviet.</p>
+        <p style="margin-top:10px;">Capital: Moscow, RSFSR<br>
+        Founded: December 30, 1922<br>
+        Area: 22,402,200 km²</p>
+      </div>
+      <div class="footer-col">
+        <h5>Government Bodies</h5>
+        <ul>
+          <li><a href="#">Supreme Soviet of the USSR</a></li>
+          <li><a href="#">Council of Ministers</a></li>
+          <li><a href="#">Presidium of the Supreme Soviet</a></li>
+          <li><a href="#">Supreme Court of the USSR</a></li>
+          <li><a href="#">Procurator-General of the USSR</a></li>
+          <li><a href="#">People's Control Committee</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Party Organs</h5>
+        <ul>
+          <li><a href="#">CPSU Central Committee</a></li>
+          <li><a href="#">Politburo of the CPSU</a></li>
+          <li><a href="#">CPSU Secretariat</a></li>
+          <li><a href="#">Party Control Commission</a></li>
+          <li><a href="#">Komsomol (Youth League)</a></li>
+          <li><a href="#">All-Union Trade Unions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Document Search (Поиск)</a></li>
+          <li><a href="#">TASS News Archive</a></li>
+          <li><a href="#">Laws and Decrees Database</a></li>
+          <li><a href="#">Enterprise Directory</a></li>
+          <li><a href="#">Citizens' Appeals (Обращения)</a></li>
+          <li><a href="#">Contact Government Bodies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© Government of the Union of Soviet Socialist Republics · Москва · All materials are official government documents</div>
+      <div class="footer-emblem">☭</div>
+      <div>Рабочие всех стран, соединяйтесь! · Workers of All Countries, Unite!</div>
+    </div>
+  </div>
+</footer>
+
+<div class="ussr-flag-strip"></div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav.main-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 80) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
